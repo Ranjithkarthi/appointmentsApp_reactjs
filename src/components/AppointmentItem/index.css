@@ -1,0 +1,35 @@
+/* Write your CSS here */
+.item-container {
+  padding: 0 4px 0 4px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin: 8px;
+  width: 250px;
+  list-style-type: none;
+}
+.heading-star-container {
+  display: flex;
+  justify-content: space-between;
+}
+.heading {
+  font-weight: bold;
+}
+.star-img {
+  height: 16px;
+  align-self: center;
+}
+.date-item {
+  color: #b5b7c4;
+}
+.star-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .item-container {
+    width: 200px;
+    margin-left: 0;
+  }
+}

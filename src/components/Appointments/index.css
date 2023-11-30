@@ -1,0 +1,134 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.overall-content-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-heading {
+  font-size: large;
+}
+.title {
+  margin-bottom: 8px;
+  width: 200px;
+}
+.selected-date {
+  margin-bottom: 8px;
+  width: 200px;
+}
+.btn {
+  background-color: #8b5cf6;
+  border-radius: 4px;
+  padding: 6px;
+  border: none;
+  color: #fff;
+  min-width: 80px;
+  max-width: 90px;
+  margin-top: 12px;
+}
+.cover-img {
+  height: 250px;
+  width: 300px;
+}
+.hr-line {
+  width: 100%;
+  border: 1pxx solid #000;
+}
+.appointments-items-heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+.appointments-items-heading {
+  font-size: medium;
+}
+.starred-btn {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #9897f0;
+  color: #9897f0;
+  font-weight: bold;
+  width: 70px;
+  height: 30px;
+}
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cover-img {
+    order: 0;
+    flex-shrink: 0;
+    align-self: center;
+    max-width: 200px;
+    min-width: 120px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  .main-heading {
+    align-self: center;
+  }
+
+  .form-container {
+    order: 1;
+  }
+
+  .title {
+    width: 150px;
+  }
+  .selected-date {
+    width: 150px;
+  }
+
+  .appointments-items-heading-container {
+    align-items: center;
+  }
+
+  .appointments-items-heading {
+    font-size: small;
+  }
+  .starred-btn {
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid #9897f0;
+    color: #9897f0;
+    font-weight: bold;
+    font-size: xx-small;
+    padding: 4px;
+    height: 18px;
+    width: 50px;
+    align-self: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
